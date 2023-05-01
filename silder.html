@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>slider</title>
+
+<body>
+
+<!-- <div class="container">
+  <!-- <h2>Slideshow </h2> -->
+<!-- </div> -->
+
+<div class="content" style="max-width:900px">
+  <img class="mySlides" src="https://th.bing.com/th/id/R.33d02c67b4a6e90abe2d7a58f764edd8?rik=JYmQaMVSULpYQg&riu=http%3a%2f%2fthewowstyle.com%2fwp-content%2fuploads%2f2015%2f01%2fnature-images.jpg&ehk=BNPsuSOUR7ATZ3EpRwxx1xFl7LUbO3tYlu1wFLCBrCE%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+  <img class="mySlides" src="https://www.thewowstyle.com/wp-content/uploads/2015/01/nature-images..jpg" style="width:100%">
+  <img class="mySlides" src="https://www.pixelstalk.net/wp-content/uploads/2016/07/Wallpapers-pexels-photo.jpg" style="width:100%">
+  <img class="mySlides" src="https://images.pexels.com/photos/443446/pexels-photo-443446.jpeg?cs=srgb&dl=daylight-forest-glossy-443446.jpg&fm=jpg" style="width:100%">
+  <img class="mySlides" src="https://th.bing.com/th/id/R.9069ae2c83237354d556ac82e37c8066?rik=wVvlGFIhBYX5bg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fHD-images-of-nature-download.jpg&ehk=J7hY3CfwcsW7lTkuGbE3nQPUYPdt1OTluYfKHRW62qs%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+  <img class="mySlides" src="https://wallpapercave.com/wp/wp2722874.jpg" style="width:100%">
+</div>
+
+<div class="center">
+  <div class="center">
+    <button class="button light-grey" onclick="plusDivs(-1)"> Prev</button>
+    <button class="button light-grey" onclick="plusDivs(1)">Next </button>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("red", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " red";
+}
+</script>
+</body>
+</html>
