@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+     #a{
+        padding: 50px;;
+        width: 500px;
+        margin: auto;
+        color: red;
+        background-image: url('./img.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        border: 1px solid;
+       }
+
+       #a{
+        background-image: linear-gradient(to right, red, blue, green);
+        padding: 10px 15px;
+        border-radius: 10px;
+        border: 0;
+        color: #fff;
+       }
+
+       #b{
+        background-image: radial-gradient(red, blue 50%);
+        height: 100px;
+        width: 100px;
+       }
+
+       #c{
+        background-image: repeating-radial-gradient(red 80%, blue 5%, pink, green);
+        height: 100px;
+        width: 100px;
+       }
+
+       #d{
+        background-image: conic-gradient(red 25%, green 25%, green 50%, blue 50%, blue 75%,  maroon 75%);
+        height: 100px;
+        width: 100px;
+       }
+
+       .chrome{
+        background-image: conic-gradient(red 33%, yellow 33%, yellow 66%, green 66%);
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+        .inner{
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        border: 5px solid white;
+        background-color: blue;
+       }
+    </style>
+</head>
+<body>
+        <div id="b">
+
+        </div>
+        <div id="c">
+
+        </div>
+        <div id="d">
+
+        </div>
+
+        <div class="chrome">
+            <div class="inner"></div>
+        </div>
+</body>
+</html>
+
+<script src="https://kit.fontawesome.com/a55cf239a3.js" crossorigin="anonymous"></script>
